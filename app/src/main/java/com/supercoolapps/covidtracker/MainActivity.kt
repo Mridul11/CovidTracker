@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 Log.e(TAG, "onSuccess! $response")
                 val statesData = response.body()
                 if( statesData == null){
-                    Log.i(TAG, "Somethign went wrong!")
+                    Log.i(TAG, "Something went wrong!")
                     return
                 }
                 perStateDailyData = statesData.reversed().groupBy { it.state }
